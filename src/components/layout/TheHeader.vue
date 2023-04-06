@@ -2,17 +2,17 @@
     <header>
         <nav>
             <h1>
-                <route-link to="/">Find a Hotel</route-link>
+                <route-link to="/">Hotel Booking</route-link>
             </h1>
             <ul>
                 <li>
-                    <router-link to="/hotel">All hotels</router-link>
+                    <router-link to="/hotel">All Hotels</router-link>
                 </li>
                 <li>
-                    <router-link to="/login">login</router-link>
+                    <router-link to="/login">Login</router-link>
                 </li>
                 <li>
-                    <router-link to="/registerpage">register As user</router-link>
+                    <router-link to="/registerpage">Register As User</router-link>
                 </li>
             </ul>
         </nav>

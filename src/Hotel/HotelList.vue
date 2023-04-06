@@ -8,7 +8,7 @@
     <div class="controls">
         <!-- all router link and button will be replaced with base button -->
    <base-button mode="outline">Refresh</base-button>
-  <base-button  link to="/register">Register as a Hotel</base-button>
+  <base-button  link to="/">view detail</base-button>
     </div>
     <ul v-if="hasHotels">   
         <hotel-item v-for="hotel in filteredHotels"

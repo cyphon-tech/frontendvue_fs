@@ -7,15 +7,15 @@
         </div>
         <form @submit.prevent="onCreatePost">
             <div class="form-group">
-                <label>Title</label>
+                <label>Name:</label>
                 <input type="text" class="form-control" v-model="title" />
             </div>
             <div class="form-group">
-                <label>email</label>
+                <label>Email:</label>
                 <input type="text" class="form-control" v-model="email" />
             </div>
             <div class="form-group">
-                <label>password</label>
+                <label>Password:</label>
                 <input type="text" class="form-control" v-model="password" />
             </div>
            
@@ -52,6 +52,7 @@ export default {
                 .then((response) => {
                     this.isSuccess = true;
                     console.log(response);
+                     this.$router.push('/login');
                     this.$emit('postcreated');
                 });
         },
