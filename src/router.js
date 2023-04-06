@@ -9,6 +9,7 @@ import AuthLogin from './Login/AuthLogin.vue'
 import RegisterPage from './Customer/RegisterPage.vue'
 import AdminDashboard from './Admin/AdminDashboard.vue'
 import YourHotel from "./Hotel/YourHotel.vue"
+//this is for vivek
 const router = createRouter({
   history: createWebHistory(),
    routes: [
