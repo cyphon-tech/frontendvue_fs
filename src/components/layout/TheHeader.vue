@@ -9,15 +9,34 @@
                     <router-link to="/hotel">All Hotels</router-link>
                 </li>
                 <li>
-                    <router-link to="/login">Login</router-link>
+                    <router-link to="/login" v-if="addone()===false">Login</router-link>
                 </li>
                 <li>
-                    <router-link to="/registerpage">Register As User</router-link>
+                    <router-link to="/registerpage" v-if="addone()===false">Register As User </router-link>
+                    
+                </li>
+                <li>
+                    <router-link to="/logout" @click="logoutapp" v-if="addone()===true" > Logout </router-link>
+                    
                 </li>
             </ul>
         </nav>
     </header>
 </template>
+<script>
+export default {
+  methods :{
+      addone(){
+         return this.$store.getters.isauth;
+      },
+      logoutapp()
+      {
+            this.$store.commit('logout1'); 
+           this.$store.dispatch('logout'); 
+      }
+  }
+};
+  </script>
 <style scoped>
  header {
   width: 100%;

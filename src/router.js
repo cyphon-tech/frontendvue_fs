@@ -13,6 +13,7 @@ const router = createRouter({
   history: createWebHistory(),
    routes: [
     {path:'/', redirect: '/hotel'},
+    {path:'/logout', redirect: '/hotel'},
     {path: '/hotel',component: HotelList},
     {path: '/hotel/:id',component: HotelDetail,
      props: true, // id will send as a prop in the component
