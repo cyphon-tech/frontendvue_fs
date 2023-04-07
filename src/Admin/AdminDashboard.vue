@@ -6,3 +6,7 @@
         
         </div>
 </template>
+<script>
+//console.log("qwerghjhgf");
+//console.log(this.$store.isauth());
+</script>
